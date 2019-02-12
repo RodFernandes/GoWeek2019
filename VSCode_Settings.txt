@@ -1,0 +1,27 @@
+{
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Dracula",
+  "editor.mouseWheelZoom": true,
+  "editor.fontSize": 18,
+  "editor.lineHeight": 24,
+  "editor.fontFamily": "Fira Code, monospace",
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "400",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.rulers": [80, 120],
+  "editor.tabSize": 2,
+  "editor.renderLineHighlight": "gutter",
+  "editor.parameterHints.enabled": false,
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+  "terminal.integrated.fontSize": 14,
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "breadcrumbs.enabled": true,
+  "prettier.eslintIntegration": true
+}
