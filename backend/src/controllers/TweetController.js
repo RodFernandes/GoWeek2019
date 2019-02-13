@@ -10,6 +10,6 @@ module.exports = {
   async store(req, res) {
     const tweet = await Tweet.create(req.body);
 
-    return tweet;
+    return res.json(tweets);
   }
 };
