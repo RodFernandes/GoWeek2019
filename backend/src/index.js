@@ -6,6 +6,8 @@ const app = express();
 const server = require("http").Server(app);
 const io = require("socket.io")(server);
 
+const cors = require("cors");
+
 //mLab.com
 mongoose.connect(
   "mongodb://goweek:goweek123@ds223605.mlab.com:23605/goweek-backend",
@@ -19,9 +21,10 @@ app.use((req, res, next) => {
   return next();
 });
 
+app.use(cors());
 app.use(express.json());
 app.use(require("./routes"));
 
-app.listen(3000, () => {
+server.listen(3000, () => {
   console.log("Server Started on Port 3000");
 });
