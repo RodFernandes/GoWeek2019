@@ -4,6 +4,8 @@ module.exports = {
   async index(req, res) {
     const tweets = await Tweet.find({}).sort("-createdAt");
 
+    req.io.emit("tweet", tweets);
+
     return res.json(tweets);
   },
 
